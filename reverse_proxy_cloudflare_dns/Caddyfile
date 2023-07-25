@@ -1,0 +1,10 @@
+{
+	email your@email.com
+}
+
+demo.domain.com {
+	reverse_proxy ip-or-hostname:port
+	tls {
+		dns cloudflare {env.CLOUDFLARE_API_TOKEN}
+	}
+}
